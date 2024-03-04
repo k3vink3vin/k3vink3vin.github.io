@@ -2,7 +2,7 @@
   "applinks": {
       "details": [
            {
-             "appIDs": [ "com.digimarc.mobile.validate.dummy" ],
+             "appIDs": [ "3L9VK494LA.com.digimarc.mobile.validate.dummy" ],
              "components": [
                {
                   "#": "no_universal_links",
@@ -36,9 +36,9 @@
        ]
    },
    "webcredentials": {
-      "apps": [ "com.digimarc.mobile.validate.dummy" ]
+      "apps": [ "3L9VK494LA.com.digimarc.mobile.validate.dummy" ]
    },
     "appclips": {
-        "apps": ["com.digimarc.mobile.validate.dummy.MyApp.Clip"]
+        "apps": ["3L9VK494LA.com.digimarc.mobile.validate.dummy.MyApp.Clip"]
     }
 }
