@@ -8,13 +8,17 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
+  const iOS = !window.MSStream && /iPad|iPhone|iPod/.test(navigator.userAgent); // fails on iPad iOS 13
+
   const openApp = () => {
-    let now = new Date().valueOf();
+    const now = new Date().valueOf();
     setTimeout(function () {
         if (new Date().valueOf() - now > 100) return;
-        window.location = "https://apps.apple.com/us/app/digimarc-discover/id401005077";
+        window.location = iOS
+          ? 'https://apps.apple.com/us/app/digimarc-discover/id401005077'
+          : 'https://play.google.com/store/apps/details?id=com.digimarc.corvallis';
     }, 25);
-    window.location = "validate://";
+    window.location = 'validate://';
   }
 </script>
 
