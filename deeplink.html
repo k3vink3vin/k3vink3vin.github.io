@@ -1,7 +1,19 @@
+<script>
+  const openApp = () => {
+    let now = new Date().valueOf();
+    setTimeout(function () {
+        if (new Date().valueOf() - now > 100) return;
+        window.location = "https://google.com/?q=appnotinstalled";
+    }, 25);
+    window.location = "validate://";
+  }
+</script>
+
 <h1>
   <a deeplink="true" href="/debug/">debug</a> <br />
   <a deeplink="true" href="/buy/">buy</a> <br />
   <a deeplink="true" href="/welcome/">welcome</a> <br />
+  <button onclick="openApp()">open app</button> <br />
   <a deeplink="true" href="validate://debug">validate://debug</a> <br />
   <a deeplink="true" href="validate://buy">validate://buy</a> <br />
   <a deeplink="true" href="validate://welcome">validate://welcome</a> <br />
