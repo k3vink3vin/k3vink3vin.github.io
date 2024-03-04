@@ -2,7 +2,7 @@
   "applinks": {
       "details": [
            {
-             "appIDs": [ "ABCDE12345.com.example.app", "ABCDE12345.com.example.app2" ],
+             "appIDs": [ "com.digimarc.mobile.digimarcvalidate" ],
              "components": [
                {
                   "#": "no_universal_links",
