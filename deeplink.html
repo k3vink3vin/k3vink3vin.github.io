@@ -12,12 +12,14 @@
 
   const openApp = () => {
     const now = new Date().valueOf();
+
     setTimeout(function () {
-        if (new Date().valueOf() - now > 100) return;
+        if (new Date().valueOf() - now > 200) return;
         window.location = iOS
           ? 'https://apps.apple.com/us/app/digimarc-discover/id401005077'
-          : 'https://play.google.com/store/apps/details?id=com.digimarc.corvallis';
+          : 'market://details?id=com.digimarc.corvallis';
     }, 100);
+
     window.location = 'validate://';
   }
 </script>
